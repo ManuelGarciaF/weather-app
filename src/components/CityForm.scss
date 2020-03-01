@@ -1,0 +1,47 @@
+.city-form {
+  align-self: center;
+
+  margin: 1rem;
+
+  .error {
+    color: white;
+
+    .fa-exclamation-circle {
+      margin: 0 0.5rem;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+    border-radius: 0.5rem;
+    background-color: #2a435c;
+
+    padding: 1rem;
+  }
+
+  input {
+    background-color: #2a435c;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+
+    &::placeholder {
+      opacity: 1;
+      color: white;
+    }
+
+    &:focus::placeholder {
+      visibility: hidden;
+    }
+  }
+
+  button,
+  button i {
+    background-color: #2a435c;
+    color: white;
+  }
+}

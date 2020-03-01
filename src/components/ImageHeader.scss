@@ -1,0 +1,42 @@
+.image-header {
+  position: relative;
+  height: 33vh;
+
+  overflow: hidden;
+
+  img {
+    position: relative;
+    max-height: 33vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem 0.5rem;
+    text-align: end;
+    color: white;
+    z-index: 5;
+
+    .temperature {
+      .number {
+        font-size: 3rem;
+      }
+      .unit {
+        font-size: 2.5rem;
+      }
+    }
+    .weather {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .image-header img {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
