@@ -64,7 +64,7 @@ class App extends React.Component {
   async fetchWeatherData(query) {
     const { unit } = this.state;
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${API_KEY}&units=${unit}`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${API_KEY}&units=${unit}`,
       { mode: 'cors' },
     );
     return response.json();
